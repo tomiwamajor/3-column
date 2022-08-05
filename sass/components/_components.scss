@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  max-height: 100vh;
+  justify-content: center;
+}
+
+.components {
+  margin: 100px;
+
+  @media only screen and (max-width: 910px) {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__cars {
+    justify-content: center;
+    height: 450px;
+    display: flex;
+
+    @media only screen and (max-width: 910px) {
+      flex-direction: column;
+      height: 100%;
+      // padding-left: 300px;
+      align-items: center;
+    }
+
+    &--1 {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      font-size: 15px;
+      padding: 35px;
+      width: 300px;
+      background-color: hsl(31, 77%, 52%);
+
+      @media only screen and (max-width: 910px) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &--2 {
+      padding: 35px;
+      width: 300px;
+      background-color: hsl(184, 100%, 22%);
+    }
+
+    &--3 {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 35px;
+      width: 300px;
+      background-color: hsl(179, 100%, 13%);
+
+      @media only screen and (max-width: 910px) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &--head {
+      color: hsl(0, 0%, 95%);
+      font-size: 30px;
+      font-family: "Big Shoulders Display", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+    &--text {
+      font-size: 20px;
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      color: hsla(0, 0%, 100%, 0.75);
+      padding-bottom: 80px;
+
+      @media only screen and (max-width: 1076px) {
+        padding-bottom: 40px;
+      }
+
+      @media only screen and (max-width: 910px) {
+        padding-bottom: 40px;
+      }
+    }
+
+    &--btn {
+    }
+
+    &--btn1 {
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      width: 130px;
+      border-radius: 25px;
+      height: 35px;
+      border: none;
+      background-color: hsl(0, 0%, 95%);
+
+      &:hover {
+        cursor: pointer;
+        border: 0.5px solid hsl(0, 0%, 95%);
+        background-color: hsl(31, 77%, 52%);
+        color: hsl(0, 0%, 95%);
+      }
+    }
+
+    &--btn2 {
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      width: 130px;
+      border-radius: 25px;
+      height: 35px;
+      border: none;
+      background-color: hsl(0, 0%, 95%);
+
+      &:hover {
+        cursor: pointer;
+        border: 0.5px solid hsl(0, 0%, 95%);
+        background-color: hsl(184, 100%, 22%);
+        color: hsl(0, 0%, 95%);
+      }
+    }
+
+    &--btn3 {
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 400;
+      width: 130px;
+      border-radius: 25px;
+      height: 35px;
+      border: none;
+      background-color: hsl(0, 0%, 95%);
+
+      &:hover {
+        cursor: pointer;
+        border: 0.5px solid hsl(0, 0%, 95%);
+        background-color: hsl(179, 100%, 13%);
+        color: hsl(0, 0%, 95%);
+      }
+    }
+  }
+}
